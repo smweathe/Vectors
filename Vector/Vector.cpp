@@ -6,7 +6,7 @@
 int main()
 {
 	//Build Vector and sort
-	std::vector<int>v = { 1, 6, 4, 2, 2, 6, 10, 6 };
+	std::vector<int>v = { 1, 6, 4, 2, 2, 6, 10, 6, 1 };
 	sort(v.begin(), v.end());
 
 	//set min to first element
@@ -36,9 +36,9 @@ int main()
 		prev = a;
 	}
 	//output variables
-	std::cout << "Calculating Results \n\n";
+	std::cout << "Calculating Results for the " << v.size()<<" elements given. \n";
+	std::cout << "Min: " << min <<"\n";
 	std::cout << "Max: " << max <<"\n";
-	std::cout << "Min: " << min <<"\n";;
 	std::cout << "Mode: " << mode <<"\n";;
 	system("pause");
 }
